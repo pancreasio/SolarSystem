@@ -38,7 +38,7 @@ namespace gamespace
             }
 
             orbitTimer -= Time.deltaTime;
-            if (orbitTimer <=0)
+            if (orbitTimer <= 0)
             {
                 orbitSpeed = planetList[index].orbitSpeed;
                 orbitDistance = planetList[index].orbitDistance + 20;
@@ -54,7 +54,7 @@ namespace gamespace
 
             //orbit star
             transform.position = new Vector3(orbitStar.transform.position.x + orbitDistance * Mathf.Cos(orbitAngle),
-                    orbitStar.transform.position.y+2,
+                    orbitStar.transform.position.y + 2,
                     orbitStar.transform.position.z + orbitDistance * Mathf.Sin(orbitAngle));
             orbitAngle += orbitSpeed * Time.deltaTime;
 
