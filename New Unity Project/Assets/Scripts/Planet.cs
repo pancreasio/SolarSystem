@@ -13,7 +13,7 @@ namespace gamespace
         public float initialOrbitAngle = 0;
         public float rotationSpeed;
 
-        private float orbitAngle;
+        public float orbitAngle;
 
         void Start()
         {
@@ -24,13 +24,13 @@ namespace gamespace
         void Update()
         {
             //orbit star
-            transform.position =new Vector3 (orbitStar.transform.position.x + orbitDistance * Mathf.Cos(orbitAngle),
+            transform.position = new Vector3(orbitStar.transform.position.x + orbitDistance * Mathf.Cos(orbitAngle),
                 orbitStar.transform.position.y,
                 orbitStar.transform.position.z + orbitDistance * Mathf.Sin(orbitAngle));
             orbitAngle += orbitSpeed * Time.deltaTime;
 
             //planet rotation
-            //transform.rotation = new Vector3(transform.rotation.x + rotationSpeed * Time.deltaTime, transform.rotation.y, transform.rotation.z);
+            transform.Rotate(new Vector3(0, 1, 0), rotationSpeed, Space.Self);
         }
     }
 }

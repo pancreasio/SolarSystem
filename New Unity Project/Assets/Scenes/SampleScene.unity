@@ -179,7 +179,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 4.287, y: -30.000002, z: 0}
 --- !u!1 &331979256
 GameObject:
@@ -219,6 +219,7 @@ MonoBehaviour:
   orbitDistance: 1
   initialOrbitAngle: 0
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!135 &331979258
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -289,7 +290,7 @@ Transform:
   m_LocalScale: {x: 0.2231, y: 0.2231, z: 0.2231}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343288429
 GameObject:
@@ -382,7 +383,7 @@ Transform:
   m_LocalScale: {x: 2.6647, y: 2.6647, z: 2.6647}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &343288434
 MonoBehaviour:
@@ -402,6 +403,7 @@ MonoBehaviour:
   orbitDistance: 90
   initialOrbitAngle: 140
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &343288435
 TrailRenderer:
   serializedVersion: 2
@@ -536,6 +538,7 @@ MonoBehaviour:
   orbitDistance: 30
   initialOrbitAngle: 50
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!135 &422405466
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -607,7 +610,7 @@ Transform:
   m_Children:
   - {fileID: 2017749510}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &422405470
 TrailRenderer:
@@ -715,6 +718,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -779,13 +783,40 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: -0.17444906, y: -0.7891368, z: 0.52808475, w: -0.2606858}
-  m_LocalPosition: {x: -21.8, y: 115.6, z: 46.6}
+  m_LocalRotation: {x: 0.45997646, y: -0, z: -0, w: 0.8879311}
+  m_LocalPosition: {x: -2.6, y: 73.8, z: -45.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 67.58, y: -216.56099, z: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 54.771004, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44419756cb1974041b0721e937fad361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetList:
+  - {fileID: 1969230223}
+  - {fileID: 1826894615}
+  - {fileID: 422405465}
+  - {fileID: 1183725808}
+  - {fileID: 1264424653}
+  - {fileID: 343288434}
+  - {fileID: 1685561462}
+  - {fileID: 1079333032}
+  orbitStar: {fileID: 1635315738}
+  orbitSpeed: 0
+  orbitDistance: 0
+  initialOrbitAngle: 0
+  rotationSpeed: 0
+  orbitTime: 5
 --- !u!1 &1079333027
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +908,7 @@ Transform:
   m_LocalScale: {x: 1.2446446, y: 1.2446446, z: 1.2446446}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1079333032
 MonoBehaviour:
@@ -897,6 +928,7 @@ MonoBehaviour:
   orbitDistance: 125
   initialOrbitAngle: 190
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &1079333033
 TrailRenderer:
   serializedVersion: 2
@@ -1031,6 +1063,7 @@ MonoBehaviour:
   orbitDistance: 40
   initialOrbitAngle: 90
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!135 &1183725809
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1101,7 +1134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1183725813
 TrailRenderer:
@@ -1289,7 +1322,7 @@ Transform:
   m_LocalScale: {x: 3.7873, y: 3.7873, z: 3.7873}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1264424653
 MonoBehaviour:
@@ -1309,6 +1342,7 @@ MonoBehaviour:
   orbitDistance: 60
   initialOrbitAngle: 120
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &1264424654
 TrailRenderer:
   serializedVersion: 2
@@ -1494,7 +1528,7 @@ Transform:
   m_LocalScale: {x: 13.266155, y: 13.266155, z: 13.266155}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1635315743
 MonoBehaviour:
@@ -1509,6 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starName: Sun
+  rotationSpeed: -0.2
 --- !u!1 &1685561457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,7 +1635,7 @@ Transform:
   m_LocalScale: {x: 1.5331, y: 1.5331, z: 1.5331}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1685561462
 MonoBehaviour:
@@ -1620,6 +1655,7 @@ MonoBehaviour:
   orbitDistance: 110
   initialOrbitAngle: 160
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &1685561463
 TrailRenderer:
   serializedVersion: 2
@@ -1807,7 +1843,7 @@ Transform:
   m_Children:
   - {fileID: 1969009086}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1826894615
 MonoBehaviour:
@@ -1827,6 +1863,7 @@ MonoBehaviour:
   orbitDistance: 20
   initialOrbitAngle: 20
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &1826894616
 TrailRenderer:
   serializedVersion: 2
@@ -2012,7 +2049,7 @@ Transform:
   m_LocalScale: {x: 6.9915, y: 1, z: 4.9412}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969009085
 GameObject:
@@ -2026,6 +2063,7 @@ GameObject:
   - component: {fileID: 1969009089}
   - component: {fileID: 1969009088}
   - component: {fileID: 1969009087}
+  - component: {fileID: 1969009090}
   m_Layer: 0
   m_Name: Venus Atmosphere
   m_TagString: Untagged
@@ -2105,6 +2143,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969009085}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1969009090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969009085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8422153dbda3784f997cc35b1aedc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2
 --- !u!1 &1969230218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1969230223
 MonoBehaviour:
@@ -2216,6 +2267,7 @@ MonoBehaviour:
   orbitDistance: 10
   initialOrbitAngle: 0
   rotationSpeed: 1
+  orbitAngle: 0
 --- !u!96 &1969230224
 TrailRenderer:
   serializedVersion: 2
@@ -2323,6 +2375,7 @@ GameObject:
   - component: {fileID: 2017749513}
   - component: {fileID: 2017749512}
   - component: {fileID: 2017749511}
+  - component: {fileID: 2017749514}
   m_Layer: 0
   m_Name: Earth Atmosphere
   m_TagString: Untagged
@@ -2402,3 +2455,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017749509}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2017749514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017749509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8422153dbda3784f997cc35b1aedc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 2
